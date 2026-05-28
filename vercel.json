@@ -1,17 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/artifacts/tempmail/$1"
-    }
-  ],
-  "builds": [
-    {
-      "src": "artifacts/tempmail/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
+    { "source": "/(.*)", "destination": "/artifacts/tempmail/dist/$1" }
   ]
 }
